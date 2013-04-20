@@ -16,6 +16,7 @@ IMAGE_INSTALL += "\
   python-crypt \
   python-readline \
   cosm-python \
+  python-pybbio \
   git \
   strace \
 "
