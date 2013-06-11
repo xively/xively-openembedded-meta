@@ -1,6 +1,6 @@
 require xively-python.inc
 
-SRCREV = "b12f4750c6fdde4677017a9fee3c6deee4a962fb"
-PV = "0.0.1+git${SRCPV}"
+SRCREV = "bbc7418623c23eda025700ecbcacd563127ccbac"
+PV = "0.1.0-rc0+git${SRCPV}"
 
-LIC_FILES_CHKSUM = "file://README.rst;md5=b9cdd4d704adc2a3544c31c8c029f636"
+LIC_FILES_CHKSUM = "file://README.rst;md5=4acf34fa9ed486b582ec9ab0492beda4"
