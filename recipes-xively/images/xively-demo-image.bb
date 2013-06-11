@@ -1,4 +1,4 @@
-DESCRIPTION = "A small demo image with all Cosm examples."
+DESCRIPTION = "A small demo image with all Xively examples."
 
 IMAGE_INSTALL = "packagegroup-core-boot ${ROOTFS_PKGMANAGE_BOOTSTRAP} ${CORE_IMAGE_EXTRA_INSTALL}"
 
@@ -15,7 +15,7 @@ IMAGE_INSTALL += "\
   python-misc \
   python-crypt \
   python-readline \
-  cosm-python \
+  xively-python \
   python-pybbio \
   python-resource \
   git \

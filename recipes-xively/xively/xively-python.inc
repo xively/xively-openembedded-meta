@@ -1,5 +1,5 @@
-DESCRIPTION = "The official pythonic wrapper library for the Cosm V2 API."
-HOMEPAGE = "https://cosm.com"
+DESCRIPTION = "The official pythonic wrapper library for the Xively V2 API."
+HOMEPAGE = "https://xively.com"
 SECTION = "devel/python"
 LICENSE = "BSD-3-Clause"
 
@@ -7,7 +7,7 @@ DEPENDS = "python-requests"
 RDEPENDS_${PN} = "python-requests"
 PR = "r0"
 
-SRC_URI = "git://github.com/gnublade/cosm-python;protocol=git"
+SRC_URI = "git://github.com/xively/xively-python;protocol=git"
 
 S = "${WORKDIR}/git/"
 

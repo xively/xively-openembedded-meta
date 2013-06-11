@@ -1,4 +1,4 @@
-require cosm-python.inc
+require xively-python.inc
 
 SRCREV = "b12f4750c6fdde4677017a9fee3c6deee4a962fb"
 PV = "0.0.1+git${SRCPV}"
