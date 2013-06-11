@@ -24,8 +24,3 @@ BBCLASSEXTEND = "native"
 do_install_append() {
   rm -f ${D}${libdir}/python*/site-packages/site.py*
 }
-#do_install_append() {
-#  rm -f ${D}${libdir}/python2.7/site-packages/site.py
-#  rm -f ${D}${libdir}/python2.7/site-packages/site.pyo
-#  rm -f ${D}${libdir}/python2.7/site-packages/site.pyc
-#}
