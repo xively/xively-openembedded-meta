@@ -1,4 +1,5 @@
 require python-pybbio.inc
+inherit setuptools
 
 SRCREV = "56acc481809b4c4c4390d68cd0dc35b8f796be82"
 PV = "0.6+git${SRCPV}"

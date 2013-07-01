@@ -10,21 +10,18 @@ SRC_URI = "git://github.com/alexanderhiam/PyBBIO;protocol=git"
 
 S = "${WORKDIR}/git/"
 
-inherit distutils
-
 # need to export these variables for python-config to work
 export BUILD_SYS
 export HOST_SYS
 export STAGING_INCDIR
 export STAGING_LIBDIR
 
-BBCLASSEXTEND = "native"
-
-## This files is being found under in directory `PyBBIO-0.6-py2.7-linux-x86_64.egg`,
-## there is probably a bug somewhere as it's not a `linux-x86_64` binary, it's
-## still an ARM 32-bit one. May be it also needs to be move to make it usable...
-FILES_${PN}-dbg += "${D}${libdir}/python*/site-packages/PyBBIO-*.egg/bbio/platform/beaglebone/.debug/driver.so"
+FILES_${PN}-dbg_append = "${PYTHON_SITEPACKAGES_DIR}/*/*/*/.debug"
 
 do_install_append() {
   rm -f ${D}${libdir}/python*/site-packages/site.py*
+  rm -f ${D}${datadir}/bbio/platform/api.py
+  rm -r ${D}${datadir}/bbio/platform/
+  rm -r ${D}${datadir}/bbio/
+  rm -r ${D}${datadir}
 }

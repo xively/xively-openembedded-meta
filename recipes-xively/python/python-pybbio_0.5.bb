@@ -1,4 +1,5 @@
 require python-pybbio.inc
+inherit distutils
 
 SRCREV = "v${PV}"
 
